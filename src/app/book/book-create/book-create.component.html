@@ -1,0 +1,65 @@
+<h1>Form Create</h1>
+<button routerLink="">Back to book list</button>
+<form #bookForm="ngForm" (ngSubmit)="createNewBook(bookForm)">
+  <table>
+    <tr>
+      <td>Title</td>
+      <td><input type="text" name="title" [(ngModel)]="book.title"></td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>
+        <input type="text" name="author" [(ngModel)]="book.author"></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><input type="text"  name="description" [(ngModel)]="book.description">
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Create</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+
+<!--<section class="content-header">-->
+<!--  <div class="container-fluid">-->
+<!--    <div class="row mb-2">-->
+<!--      <div class="col-sm-6">-->
+<!--        <h1>Book Management</h1>-->
+<!--      </div>-->
+<!--      <div class="col-sm-6">-->
+<!--        <ol class="breadcrumb float-sm-right">-->
+<!--          <li class="breadcrumb-item"><a routerLink="./city">Home</a></li>-->
+<!--          <li class="breadcrumb-item active">Add New Book</li>-->
+<!--        </ol>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Main content &ndash;&gt;-->
+<!--<button class="btn"><a routerLink="/city" >Home</a></button>-->
+<!--<form #bookForm="ngForm" (ngSubmit)="createNewBook(bookForm)">  <div class="form-group">-->
+<!--    <label>Book Title</label>-->
+<!--    <input type="text" class="form-control" id="title" placeholder="Title" formControlName="title">-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label>Author</label>-->
+<!--    <input type="text" class="form-control" id="author" placeholder="author" formControlName="author">-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label>Description</label>-->
+<!--    <input type="text" class="form-control" id="description" placeholder="Description" formControlName="description">-->
+<!--  </div>-->
+<!--    <div class="form-group">-->
+<!--      <button type="submit" class="btn btn-primary btn-block">Add Book</button>-->
+<!--    </div>-->
+<!--</form>-->
+
+
+
